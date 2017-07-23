@@ -28,12 +28,12 @@ keyword: ""
 
 # SNS settings
 # RSS: false
-weibo_username:     Demonbane
-zhihu_username:     Demonbane
-github_username:    Kaijun
-twitter_username:   Demonbane_x
-facebook_username:  demonbane.cn
-linkedin_username:  kaijun-chen-42089354
+weibo_username:     3293343142
+# zhihu_username:     Demonbane
+github_username:    yan358941877
+# twitter_username:   Demonbane_x
+# facebook_username:  demonbane.cn
+# linkedin_username:  kaijun-chen-42089354
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
@@ -45,7 +45,7 @@ anchorjs: true                          # if you want to customize anchor. check
 # Duoshuo settings
 # duoshuo_username: kaijun
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 # Analytics settings

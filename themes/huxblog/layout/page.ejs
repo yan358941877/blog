@@ -78,7 +78,7 @@ layout: layout
                 <!-- 如果开启评论功能 -->
                 <% if(page.comments) { %>
                     <hr>
-
+                    <%- partial('../plugins/changyan') %>
                     <% if(config['duoshuo_username']) { %>
                     <!-- 多说评论框 start -->
                     <div class="comment">
