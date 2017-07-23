@@ -1,45 +1,57 @@
-# Hexo-Theme-Huxblog
+## 前言
 
-> Ported Theme of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), Thank [Huxpro](https://github.com/Huxpro) for designing such a flawless theme.
+> 感谢 [Huxpro](https://github.com/Huxpro) 设计的主题.
 
-### [Demo &rarr;](http://kaijun.github.io/hexo-theme-huxblog)
-
+> 感谢[Hux Blog](https://github.com/Huxpro/huxpro.github.io) 将主题移植到hexo中
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
-## Usage
+我在windows系统中建立了自己博客项目，希望将其部署到自己服务器上，使用hexo相关命令进行部署遇到了很多问题，因此我打算将生成的静态文件直接同步到服务器上，来实现部署。因此对这个项目进行了一些修改，来替换hexo自带的部署方式。
 
-I didn't publish it as a single theme folder because a few of the pages are added and modified manually, so you should manually create some extra folders in `source` for the new pages and modify the `_config.yml` if you only have the single theme folder.
+## 使用
 
-So i just pushed the whole hexo project for your convenience, all pre settings and boilerplates are included, have a look and go ahead customizing your own blog!
+### 1.配置rsync服务
 
-##### 1.Init
+具体步骤可以参考我的文章[Ubuntu配置rsync服务](https://segmentfault.com/a/1190000010310496)
+
+### 2.项目初始化
 
 ```
-git clone https://github.com/Kaijun/hexo-theme-huxblog.git
-cd hexo-theme-huxblog
+git clone https://github.com/yan358941877/blog.git
+cd blog
 npm install
 ```
 
-##### 2.Modify
-Modify `_config.yml` file with your own info.
-Especially the section:
+### 3.修改
+
+使用自己的信息修改 `_config.yml`文件
+
+特别是这一部分
 
 ```
-deploy:
-  type: git
-  repo: https://github.com/Kaijun/hexo-theme-huxblog
-  branch: gh-pages
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yanxinxin.cn/blog
+root: /blog/
+permalink: :year/:month/:day/:title/
+permalink_defaults:
 ```
-Replace with your own repo!
 
-##### 3.Writting/Serve/Deploy
+
+### 4.新建文章
 
 ```
 hexo new post IMAPOST
-hexo serve // run hexo in local environment
-hexo clean && hexo deploy // hexo will push the static files automatically into the specific branch(gh-pages) of your repo!
 ```
 
-##### 4.Enjoy! 
-Please [**Star**](https://github.com/kaijun/hexo-theme-huxblog/stargazers) this Project if you like it! [**Following**](https://github.com/Kaijun) would also be appreciated!
+## 5.generate
+
+```
+npm run generate
+```
+
+## 6.部署
+
+```
+npm run deploy
+```
