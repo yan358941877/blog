@@ -4,6 +4,7 @@ subtitle:   "不适合人类阅读，非常水的自我笔记"
 date: 2017-05-25 21:54:39
 auther: 闫鑫鑫
 catalog: true
+comments: true
 # header-img: "post-bg-unix-linux.jpg"
 tags:
   - JavaScript基础
